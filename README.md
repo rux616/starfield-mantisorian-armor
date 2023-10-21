@@ -1,2 +1,1 @@
-# starfield-mantilorian-armor
-GitHub repo for my Mantilorian Armor
+data/docs/Mantilorian Armor/README.md
