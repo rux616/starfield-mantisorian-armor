@@ -1,0 +1,17 @@
+Mantisorian Armor (Mandalorian-Inspired Mantis Armor Replacer)
+==============================================================
+
+Table Of Contents
+-----------------
+- Mantisorian Armor (Mandalorian-Inspired Mantis Armor Replacer)
+    - Table Of Contents
+- Changelogs
+    - v1.0.0
+
+
+Changelogs
+==========
+
+v1.0.0
+------
+- Initial release
