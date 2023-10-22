@@ -1,1 +1,1 @@
-data/docs/Mantilorian Armor/README.md
+support/docs/README.md
