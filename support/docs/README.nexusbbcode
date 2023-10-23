@@ -1,5 +1,5 @@
 [size=5][b]Mantisorian Armor (Mandalorian-Inspired Mantis Armor Replacer)[/b][/size]
-Version: 1.0.0
+Version: 1.0.1
 
 [size=4][b][u]Table Of Contents:[/u][/b][/size]
 - Mantisorian Armor (Mandalorian-Inspired Mantis Armor Replacer)
@@ -22,9 +22,35 @@ I thought the idea of a unique spacesuit was cool, but wasn't overly enamored wi
 The layered texture files in (paint.net format - pdn) can be found in the [url=https://github.com/rux616/starfield-mantisorian-armor]GitHub repository for this project[/url].
 
 [size=4][b][u]Installation:[/u][/b][/size]
-Modding is a bit different in Starfield, so I'm just going to say this: Use a mod manager. I am not going to support other install methods.
-- Mod Organizer 2 v2.5.0 Beta 14 or later ([url=https://discord.gg/AKE9wRGpy4]MO2 Discord server[/url], "dev-builds" channel)
-- [url=https://www.nexusmods.com/site/mods/1]Vortex[/url]
+NOTE: Modding in Starfield is a bit different by default in that unless you change it, mods are now installed into the "Documents\My Games\Starfield" folder instead of in the game's installation folder.
+
+[b]Manual:[/b]
+If you [u]haven't[/u] disabled Starfield's ability to load mods from the "Documents\My Games\Starfield" folder, extract the archive there.
+
+If you [u]have[/u] disabled Starfield's ability to load mods from the "Documents\My Games\Starfield" folder, extract the archive to your Starfield installation folder (typically something like "C:\Games\SteamLibrary\steamapps\common\Starfield") instead.
+
+[b]Mod Manager:[/b]
+Download and install the archive with either Mod Organizer 2 v2.5.0 Beta 14 or later ([url=https://discord.gg/AKE9wRGpy4]MO2 Discord server[/url], "dev-builds" channel), or [url=https://www.nexusmods.com/site/mods/1]Vortex[/url]. I personally recommend Mod Organizer 2 (with the optional [url=https://kezyma.github.io/?p=rootbuilder]Root Builder[/url] plugin to use with SFSE or any other mod that requires files be put directly in the game's installation folder).
+
+[b]Archive Invalidation:[/b]
+Make sure your [font=Courier New][color=#b2b2b2]StarfieldCustom.ini[/color][/font] file in the "Documents\My Games\Starfield" folder contains the following:
+
+    [font=Courier New][color=#b2b2b2][Archive][/color][/font]
+    bInvalidateOlderFiles=1
+    [font=Courier New][color=#b2b2b2]sResourceDataDirsFinal=[/color][/font]
+
+[b]Disabling Mod Loading From "Documents\My Games\Starfield":[/b]
+NOTE: This is optional. It's also not even necessary with Mod Organizer 2 as it virtualizes everything already.
+
+Make sure your [font=Courier New][color=#b2b2b2]StarfieldCustom.ini[/color][/font] file in the "Documents\My Games\Starfield" folder contains the following:
+
+    [font=Courier New][color=#b2b2b2][Display][/color][/font]
+    sPhotoModeFolder=Photos
+
+    [font=Courier New][color=#b2b2b2][General][/color][/font]
+    bEnableMessageOfTheDay=0
+
+Then move the contents of the "Documents\My Games\Starfield\Data" folder out of said folder. Put your screenshots folder at "Documents\My Games\Starfield\Photos". The end goal is that the "Documents\My Games\Starfield\Data" folder should be empty.
 
 [size=4][b][u]Known Issues:[/u][/b][/size]
 - The spacesuit clips a little into the helmet around the neck area.
@@ -43,7 +69,7 @@ All nif, morph.dat, dds, and pdn files are derived from original Starfield asset
 
 For all other content, the following licenses apply:
 - All code files are copyright 2023 Dan Cassidy, and are licensed under the [url=https://www.gnu.org/licenses/gpl-3.0.en.html]GPL v3.0 or later[/url].
-- All non-code files are copyright 2023 Dan Cassidy, and are licensed under the [url=https://creativecommons.org/licenses/by-nc-sa/4.0/]CC BY-NC-SA 4.0[/url].
+- All non-code files are copyright 2023 Dan Cassidy, and are licensed under the [url=https://creativecommons.org/licenses/by-nc-sa/4.0/]CC BY-NC-SA 4.0[/url] license.
 
 
 [size=5][b]Credits and Acknowledgements[/b][/size]

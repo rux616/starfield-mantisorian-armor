@@ -1,6 +1,6 @@
 Mantisorian Armor (Mandalorian-Inspired Mantis Armor Replacer)
 ==============================================================
-Version: 1.0.0
+Version: 1.0.1
 
 Table Of Contents
 -----------------
@@ -29,9 +29,35 @@ The layered texture files in (paint.net format - pdn) can be found in the [GitHu
 
 Installation
 ------------
-Modding is a bit different in Starfield, so I'm just going to say this: Use a mod manager. I am not going to support other install methods.
-- Mod Organizer 2 v2.5.0 Beta 14 or later ([MO2 Discord server](https://discord.gg/AKE9wRGpy4), "dev-builds" channel)
-- [Vortex](https://www.nexusmods.com/site/mods/1)
+NOTE: Modding in Starfield is a bit different by default in that unless you change it, mods are now installed into the "Documents\My Games\Starfield" folder instead of in the game's installation folder.
+
+**Manual:**
+If you _haven't_ disabled Starfield's ability to load mods from the "Documents\My Games\Starfield" folder, extract the archive there.
+
+If you _have_ disabled Starfield's ability to load mods from the "Documents\My Games\Starfield" folder, extract the archive to your Starfield installation folder (typically something like "C:\Games\SteamLibrary\steamapps\common\Starfield") instead.
+
+**Mod Manager:**
+Download and install the archive with either Mod Organizer 2 v2.5.0 Beta 14 or later ([MO2 Discord server](https://discord.gg/AKE9wRGpy4), "dev-builds" channel), or [Vortex](https://www.nexusmods.com/site/mods/1). I personally recommend Mod Organizer 2 (with the optional [Root Builder](https://kezyma.github.io/?p=rootbuilder) plugin to use with SFSE or any other mod that requires files be put directly in the game's installation folder).
+
+**Archive Invalidation:**
+Make sure your `StarfieldCustom.ini` file in the "Documents\My Games\Starfield" folder contains the following:
+
+    [Archive]
+    bInvalidateOlderFiles=1
+    sResourceDataDirsFinal=
+
+**Disabling Mod Loading From "Documents\My Games\Starfield":**
+NOTE: This is optional. It's also not even necessary with Mod Organizer 2 as it virtualizes everything already.
+
+Make sure your `StarfieldCustom.ini` file in the "Documents\My Games\Starfield" folder contains the following:
+
+    [Display]
+    sPhotoModeFolder=Photos
+
+    [General]
+    bEnableMessageOfTheDay=0
+
+Then move the contents of the "Documents\My Games\Starfield\Data" folder out of said folder. Put your screenshots folder at "Documents\My Games\Starfield\Photos". The end goal is that the "Documents\My Games\Starfield\Data" folder should be empty.
 
 ([TOC](#table-of-contents))
 
@@ -59,7 +85,7 @@ All nif, morph.dat, dds, and pdn files are derived from original Starfield asset
 
 For all other content, the following licenses apply:
 - All code files are copyright 2023 Dan Cassidy, and are licensed under the [GPL v3.0 or later](https://www.gnu.org/licenses/gpl-3.0.en.html).
-- All non-code files are copyright 2023 Dan Cassidy, and are licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- All non-code files are copyright 2023 Dan Cassidy, and are licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
 ([TOC](#table-of-contents))
 
