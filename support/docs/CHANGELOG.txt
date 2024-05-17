@@ -6,12 +6,18 @@ Table Of Contents
 - Mantisorian Armor (Mandalorian-Inspired Mantis Armor Replacer)
     - Table Of Contents
 - Changelogs
+    - v1.1.0
     - v1.0.1
     - v1.0.0
 
 
 Changelogs
 ==========
+
+v1.1.0
+------
+- Updated nif files to be compatible with the renamed geometries in Starfield v1.11.36
+- Various improvements to build system
 
 v1.0.1
 ------
