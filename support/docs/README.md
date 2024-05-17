@@ -1,6 +1,6 @@
 Mantisorian Armor (Mandalorian-Inspired Mantis Armor Replacer)
 ==============================================================
-Version: 1.0.1
+Version: 1.1.0
 
 Table Of Contents
 -----------------
@@ -21,6 +21,8 @@ Overview
 
 Summary
 -------
+Compatible with Starfield v1.11.36.
+
 I thought the idea of a unique spacesuit was cool, but wasn't overly enamored with the looks of the default Mantis Armor. I also didn't really want to literally have Mandalorian armor. So I compromised, and retextured the Shock Trooper Armor, Starborn Helmet, and Deepseeker Pack instead. This is the result.
 
 The layered texture files in (paint.net format - pdn) can be found in the [GitHub repository for this project](https://github.com/rux616/starfield-mantisorian-armor).
@@ -37,7 +39,7 @@ If you _haven't_ disabled Starfield's ability to load mods from the "Documents\M
 If you _have_ disabled Starfield's ability to load mods from the "Documents\My Games\Starfield" folder, extract the archive to your Starfield installation folder (typically something like "C:\Games\SteamLibrary\steamapps\common\Starfield") instead.
 
 **Mod Manager:**
-Download and install the archive with either Mod Organizer 2 v2.5.0 Beta 14 or later ([MO2 Discord server](https://discord.gg/AKE9wRGpy4), "dev-builds" channel), or [Vortex](https://www.nexusmods.com/site/mods/1). I personally recommend Mod Organizer 2 (with the optional [Root Builder](https://kezyma.github.io/?p=rootbuilder) plugin to use with SFSE or any other mod that requires files be put directly in the game's installation folder).
+Download and install the archive with either Mod Organizer 2 v2.5.1 RC 2 or later ([MO2 GitHub Releases](https://github.com/ModOrganizer2/modorganizer/releases)), or [Vortex](https://www.nexusmods.com/site/mods/1). I personally recommend Mod Organizer 2 (with the optional [Root Builder](https://kezyma.github.io/?p=rootbuilder) plugin to use with SFSE or any other mod that requires files be put directly in the game's installation folder).
 
 **Archive Invalidation:**
 Make sure your `StarfieldCustom.ini` file in the "Documents\My Games\Starfield" folder contains the following:
@@ -97,6 +99,7 @@ ElminsterAU: For xEdit
 Mod Organizer 2 team: For getting Mod Organizer 2 with Starfield support out the door so quickly
 [paint.net](https://getpaint.net/): For being a really nice program to do my texture edits in
 Nexus Mods: For mod hosting and for the Vortex Mod Manager
+jmpz11: For creating the amazing [Starfield .nif Mesh Path Migration Tool for SF 1.11.33](https://www.nexusmods.com/starfield/mods/9234), allowing a swift transition to Starfield v1.11.36+
 
 ([TOC](#table-of-contents))
 
