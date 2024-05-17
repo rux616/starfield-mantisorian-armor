@@ -57,7 +57,7 @@ process {
         # convert '`...`' to '[font=Courier New][color=#$code_font_color]...[/color][/font]'
         $content = $content -replace "``(.*?)``", "[font=Courier New][color=#$code_font_color]`$1[/color][/font]"
         # convert indented code to '    [font=Courier New][color=#$code_font_color]...[/color][/font]'
-        $content = $content -replace "($line_ending*)[ ]{4,}(?! *-|\* )(.*?)($line_ending*)", "`$1    [font=Courier New][color=#$code_font_color]`$2[/color][/font]`$3"
+        $content = $content -replace "(?<=$line_ending)[ ]{4,}(?! *-|\* )(.*?)(?=$line_ending)", "    [font=Courier New][color=#$code_font_color]`$1[/color][/font]"
 
         $content | Set-Content -LiteralPath $file_out -NoNewline
     }
