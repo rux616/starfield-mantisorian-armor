@@ -1,4 +1,4 @@
-# Copyright 2023 Dan Cassidy
+# Copyright 2024 Dan Cassidy
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -16,19 +16,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 
-
-# version info
-$version_major = 1
-$version_minor = 2
-$version_patch = 0
-
-# prerelease info
-$version_prerelease = 0
-$is_pre = $false
-$is_rc = $false
-$is_beta = $false
-$is_alpha = $false
-
-# build info
-$build_number = 21
-$include_build_in_version = $false
+# customizations for the archive manifests
+$additional_exclude_7z = @("*.esp")
