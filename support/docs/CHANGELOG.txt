@@ -1,11 +1,12 @@
-Mantisorian Armor (Mandalorian-Inspired Mantis Armor Replacer)
-==============================================================
+Mantisorian Armor
+=================
 
 Table Of Contents
 -----------------
-- Mantisorian Armor (Mandalorian-Inspired Mantis Armor Replacer)
+- Mantisorian Armor
     - Table Of Contents
 - Changelogs
+    - v1.2.0
     - v1.1.0
     - v1.0.1
     - v1.0.0
@@ -13,6 +14,12 @@ Table Of Contents
 
 Changelogs
 ==========
+
+v1.2.0
+------
+- Added build/release repo submodule
+- Added plugin file for Creations compatibility
+- Added FOMOD configuration
 
 v1.1.0
 ------
